@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!-- Mendeklarasikan tipe dokumen dalam HTML -->
+<html lang="id">
+<!-- Menandakan awal dokumen HTML dan menunjukkan bahwa isi halaman menggunakan bahasa Indonesia -->
+<head>
+ <!-- Bagian "kepala" halaman, menyimpan informasi tentang dokumen HTML -->
+    <meta charset="UTF-8">
+     <!-- Menentukan format pengkodean karakter agar teks di halaman web tampil dengan benar (UTF-8 mendukung semua karakter) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Digunakan agar tampilan halaman web menyesuaikan ukuran layar perangkat-->
+    <title>Statistik Kesehatan Kabupaten Sijunjung</title>
+    <!--Digunakan untuk menentukan judul halaman yang muncul di tab browser dan hasil pencarian mesin pencari-->
+    <style> 
+        /*Menuliskan kode CSS langsung di dalam dokumen HTML guna mengatur tampilan elemen-elemen di halaman web*/
+        body {
+            font-family: Arial;
+            margin: 30px;
+            background-color: #f8f9fa;
+        }
+        /*Mengatur tampilan halaman agar menggunakan font Arial, memiliki jarak tepi 30 piksel, dan berwarna latar abu-abu muda*/
+        h1, h2, h3 {
+            text-align: center;
+            color: #1a5e12;
+            line-height: 0.5;
+        }
+        /*Membuat teks pada elemen h1, h2, dan h3 rata tengah, berwarna hijau tua (#1a5e12), serta memiliki jarak antarbaris yang rapat dengan nilai line-height 0.5*/
+        table {
+            width: 20%;
+            margin: 20px auto;
+        }
+        /*Mengatur tabel agar lebarnya 20% dari halaman dan posisinya berada di tengah dengan jarak 20 piksel dari elemen lain di sekitarnya*/
+        th, td {
+            border: 0.5px solid #aaa9a9;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        /*Memberi garis batas abu-abu tipis pada setiap sel tabel (th dan td), menambahkan jarak dalam sel sebesar 10 piksel vertikal dan 20 piksel horizontal, serta meratakan teks ke tengah*/
+        th {
+            background-color: #50af50;
+            color: white;
+        }
+        /*Memberi warna latar hijau (#50af50) dan warna teks putih pada sel judul tabel (th)*/
+    </style>
+    <!--Berfungsi untuk menutup bagian kode CSS yang sebelumnya dibuka dengan tag <style>-->
+</head>
+<!--Berfungsi untuk menutup bagian kepala dokumen HTML-->
+<body> 
+<!--Bagian "wadah" halaman, berfungsi sebagai wadah utama yang menampung seluruh konten yang ditampilkan di halaman web, seperti teks, gambar, tabel, dan elemen interaktif lainnya-->
+<tr>
+<!--Membuat satu baris dalam tabel HTML yang berisi sel-sel data (<td>) atau sel judul (<th>)-->
+    <center>
+    <!--Meratakan isi ke tengah halaman-->
+     <img src="OIP (8).jpeg" width="90" height="120">
+     <!--Menampilkan gambar, yaitu “OIP (8).jpeg” dengan ukuran 90×120 piksel-->
+    </center>
+    <!--Menutup perintah perataan tengah-->
+    <h1>Statistik Data Kesehatan</h1>
+    <h2>Kabupaten Sijunjung</h2>
+    <h3>Tahun 2024</h3>
+    <table border="1">
+    <!--Menampilkan tiga judul berurutan, judul utama (h1), subjudul (h2), dan judul tambahan (h3) yang berisi teks “Statistik Data Kesehatan Kabupaten Sijunjung Tahun 2024”, lalu memulai pembuatan tabel dengan garis tepi (border="1")-->
+        <tr>
+            <th>Kecamatan</th>
+            <th>Jumlah Fasilitas Kesehatan<br>
+            (unit)<br></th>
+            <th>Jumlah Tenaga Kesehatan<br>
+            (jiwa)<br></th>
+            <th>Jumlah Penduduk<br>
+            (jiwa)<br></th>
+            <th>Angka Harapan Hidup</th>
+        </tr>
+        <!--Membuat satu baris judul tabel (<tr>) yang berisi lima kolom header (<th>) dengan keterangan: Kecamatan, Jumlah Fasilitas Kesehatan (unit), Jumlah Tenaga Kesehatan (jiwa), Jumlah Penduduk (jiwa), dan Angka Harapan Hidup, di mana tag <br> digunakan untuk memecah teks menjadi beberapa baris-->
+        <tr>
+            <td>Kamang Baru</td>
+            <td>14</td>
+            <td>142</td>
+            <td>53.910</td>
+            <td rowspan="8">67.02</td>
+        </tr>
+        <!--Membuat satu baris data tabel (<tr>) untuk kecamatan Kamang Baru dengan isi 14 fasilitas kesehatan, 142 tenaga kesehatan, 53.910 penduduk, dan nilai angka harapan hidup 67.02 yang menggunakan atribut rowspan="8" agar sel tersebut memanjang ke bawah mencakup delapan baris-->
+        <tr>
+            <td>Sumpur Kudus</td>
+            <td>9</td>
+            <td>93</td>
+            <td>33.280 </td>
+        </tr>
+        <!--Membuat satu baris tabel (<tr>) yang menampilkan data untuk Kecamatan Sumpur Kudus dengan 9 fasilitas kesehatan, 93 tenaga kesehatan, dan 33.280 penduduk-->
+        <tr>
+            <td>IV Nagari</td>
+            <td>5</td>
+            <td>54</td>
+            <td>16.040</td>
+        </tr>
+        <!--Membuat satu baris tabel (<tr>) yang menampilkan data untuk Kecamatan IV Nagari dengan 5 fasilitas kesehatan, 54 tenaga kesehatan, dan 16.040 penduduk-->
+        <tr>
+            <td>Kupitan</td>
+            <td>5</td>
+            <td>77</td>
+            <td>13.600</td>
+        </tr>
+        <!--Membuat satu baris tabel (<tr>) yang menampilkan data untuk Kecamatan Kupitan dengan 5 fasilitas kesehatan, 77 tenaga kesehatan, dan 13.600 penduduk-->
+        <tr>
+            <td>Sijunjung</td>
+            <td>14</td>
+            <td>390</td>
+            <td>50.350</td>
+        </tr>
+        <!--Membuat satu baris tabel (<tr>) yang menampilkan data untuk Kecamatan Sijunjung dengan 14 fasilitas kesehatan, 390 tenaga kesehatan, dan 50.350 penduduk-->
+        <tr>
+            <td>Lubuk Tarok</td>
+            <td>5</td>
+            <td>55</td>
+            <td>18.910</td>
+        </tr>
+        <!--Membuat satu baris tabel (<tr>) yang menampilkan data untuk Kecamatan Lubuk Tarok dengan 5 fasilitas kesehatan, 55 tenaga kesehatan, dan 18.910 penduduk-->
+        <tr>
+            <td>Koto Tujuh</td>
+            <td>7</td>
+            <td>121</td>
+            <td>36.540</td>
+        </tr>
+        <!--Membuat satu baris tabel (<tr>) yang menampilkan data untuk Kecamatan Koto Tujuh dengan 7 fasilitas kesehatan, 121 tenaga kesehatan, dan 36.540 penduduk-->
+        <tr>
+            <td>Tanjung Gadang</td>
+            <td>9</td>
+            <td>63</td>
+            <td>28.340</td>
+        </tr>
+        <!--Membuat satu baris tabel (<tr>) yang menampilkan data untuk Kecamatan Tanjung Gadang dengan 9 fasilitas kesehatan, 63 tenaga kesehatan, dan 28.340 penduduk-->
+    </table>
+    <!--Menutup elemen tabel HTML-->
+<center>
+    <h4>Sumber: Data Badan Pusat Statistik Kabupaten Sijunjung Tahun 2024</h4></center>
+    <!--Membuat h4 yang berisikan sumber data dan diposisikan di tengah bawah tabel-->
+</tr>
+<!--Menutup satu baris tabel (<tr>) yang berisi data atau judul kolom-->
+</body>
+<!--Menutup bagian wadah HTML-->
+</html>
+<!--Menutup seluruh dokumen HTML yang sebelumnya dibuka dengan tag <html>-->
